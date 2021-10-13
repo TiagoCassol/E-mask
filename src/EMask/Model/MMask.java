@@ -9,6 +9,13 @@ public class MMask {
     private int horaMask1;
     private LocalTime horaMask2;
 
+    public MMask(int idMask, String tipoMask, int horaMask1, LocalTime horaMask2) {
+        this.idMask = idMask;
+        this.tipoMask = tipoMask;
+        this.horaMask1 = horaMask1;
+        this.horaMask2 = horaMask2;
+    }
+
 
     public MMask() {
     }

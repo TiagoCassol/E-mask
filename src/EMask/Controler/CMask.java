@@ -23,10 +23,6 @@ public class CMask {
     public CMask() {
     }
     
-    /*private int idMask;
-    private String tipoMask;
-    private int horaMask1;
-    private LocalTime horaMask2; */
     public void mokMascara(){
         MMask m1 = new MMask();
         m1.setIdMask(this.addIdMask());

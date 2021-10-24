@@ -8,7 +8,7 @@ public class CMask {
     ArrayList<CMask> mascara = new ArrayList<>();
     int idMask = 1;
 
-    public ArrayList<CMask> getMask(){
+    public ArrayList<CMask> getAll(){
         return mascara;
     }
 
@@ -43,4 +43,48 @@ public class CMask {
         m3.setHoraMask2(LocalTime.MAX);
     }
     
+    
+    
+     public int getHoraMask1(int idMask){
+        int tempoUso = (getHoraMask1(idMask));
+        for(CMask listMask: mascara){
+            if (listMask.getIdMask()==idMask) {
+                tempoUso = listMask.getHoraMask1(tempoUso);
+                break;
+            }
+        }
+        return tempoUso;
+    }
+
+    private int getIdMask() {
+        return 0;
+    }
+   /* public String getNomePes(int idPessoa){
+        String nome = null;
+        for(Pessoa listPes: pessoas){
+            if (listPes.getIdPessoa()==idPessoa) {
+                nome = listPes.getNomePessoa();
+                break;
+            }
+        }
+        return nome;
+
+
+ public int pesqIdPes(String cpf) {
+        int idPessoa = 0;
+        for (Pessoa listPes : pessoas) {
+            if (listPes.getCpf().equals(cpf)) {
+                idPessoa = listPes.getIdPessoa();
+                break;
+            }
+        }
+        return idPessoa;
+    }
+
+
+
+*/
+//(getMaskbyid)
+
+// return getHoraMask1*/
 }

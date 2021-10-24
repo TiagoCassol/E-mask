@@ -19,5 +19,6 @@ public interface InterfaceMask<I> {
     public ArrayList<I> getAll();
    
     public boolean deletar(I o);
-
+    
+    public I getByDoc(String susCliente);
 }

@@ -13,6 +13,7 @@ public class MCliente {
     private String sexoCliente;
     private String senhaCliente;
     private String susCliente;
+  
 
 
 
@@ -35,8 +36,15 @@ public class MCliente {
     }
 
 
+    
+
+    @Override
+    public String toString() {
+        return "MCliente{" + "idCliente=" + idCliente + ", nomeCliente=" + nomeCliente + ", cpf=" + cpf + ", idadeCliente=" + idadeCliente + ", enderecoCliente=" + enderecoCliente + ", telCliente=" + telCliente + ", idiomaCliente=" + idiomaCliente + ", emailCliente=" + emailCliente + ", sexoCliente=" + sexoCliente + ", senhaCliente=" + senhaCliente + ", susCliente=" + susCliente + '}';
+    }
+
     public int getIdCliente() {
-        return this.idCliente;
+        return idCliente;
     }
 
     public void setIdCliente(int idCliente) {
@@ -44,7 +52,7 @@ public class MCliente {
     }
 
     public String getNomeCliente() {
-        return this.nomeCliente;
+        return nomeCliente;
     }
 
     public void setNomeCliente(String nomeCliente) {
@@ -52,7 +60,7 @@ public class MCliente {
     }
 
     public String getCpf() {
-        return this.cpf;
+        return cpf;
     }
 
     public void setCpf(String cpf) {
@@ -60,7 +68,7 @@ public class MCliente {
     }
 
     public int getIdadeCliente() {
-        return this.idadeCliente;
+        return idadeCliente;
     }
 
     public void setIdadeCliente(int idadeCliente) {
@@ -68,7 +76,7 @@ public class MCliente {
     }
 
     public String getEnderecoCliente() {
-        return this.enderecoCliente;
+        return enderecoCliente;
     }
 
     public void setEnderecoCliente(String enderecoCliente) {
@@ -76,7 +84,7 @@ public class MCliente {
     }
 
     public String getTelCliente() {
-        return this.telCliente;
+        return telCliente;
     }
 
     public void setTelCliente(String telCliente) {
@@ -84,7 +92,7 @@ public class MCliente {
     }
 
     public String getIdiomaCliente() {
-        return this.idiomaCliente;
+        return idiomaCliente;
     }
 
     public void setIdiomaCliente(String idiomaCliente) {
@@ -92,7 +100,7 @@ public class MCliente {
     }
 
     public String getEmailCliente() {
-        return this.emailCliente;
+        return emailCliente;
     }
 
     public void setEmailCliente(String emailCliente) {
@@ -100,7 +108,7 @@ public class MCliente {
     }
 
     public String getSexoCliente() {
-        return this.sexoCliente;
+        return sexoCliente;
     }
 
     public void setSexoCliente(String sexoCliente) {
@@ -108,7 +116,7 @@ public class MCliente {
     }
 
     public String getSenhaCliente() {
-        return this.senhaCliente;
+        return senhaCliente;
     }
 
     public void setSenhaCliente(String senhaCliente) {
@@ -116,7 +124,7 @@ public class MCliente {
     }
 
     public String getSusCliente() {
-        return this.susCliente;
+        return susCliente;
     }
 
     public void setSusCliente(String susCliente) {
@@ -124,23 +132,9 @@ public class MCliente {
     }
    
 
-    @Override
-    public String toString() {
-        return "{" +
-            " idCliente='" + getIdCliente() + "'" +
-            ", nomeCliente='" + getNomeCliente() + "'" +
-            ", cpf='" + getCpf() + "'" +
-            ", idadeCliente='" + getIdadeCliente() + "'" +
-            ", enderecoCliente='" + getEnderecoCliente() + "'" +
-            ", telCliente='" + getTelCliente() + "'" +
-            ", idiomaCliente='" + getIdiomaCliente() + "'" +
-            ", emailCliente='" + getEmailCliente() + "'" +
-            ", sexoCliente='" + getSexoCliente() + "'" +
-            ", senhaCliente='" + getSenhaCliente() + "'" +
-            ", susCliente='" + getSusCliente() + "'" +
-            "}";
+    
     }
     
 
    
-}
+

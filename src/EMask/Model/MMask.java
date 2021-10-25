@@ -16,7 +16,7 @@ public class MMask {
         this.horaMask2 = horaMask2;
     }
 
-
+// só pra testar
     public MMask() {
     }
 

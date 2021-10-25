@@ -94,7 +94,7 @@ public class MLembretes {
     public void setHExercFinal(LocalTime hExercFinal) {
         this.hExercFinal = hExercFinal;
     }
-
+    // só pra testar
     @Override
     public String toString() {
         return "{" +

@@ -5,10 +5,10 @@ import java.time.LocalTime;
 import java.util.ArrayList;
 
 public class CMask {
-    ArrayList<CMask> mascara = new ArrayList<>();
+    ArrayList<MMask> mascara = new ArrayList<>();
     int idMask = 1;
 
-    public ArrayList<CMask> getAll(){
+    public ArrayList<MMask> getAll(){
         return mascara;
     }
 
@@ -16,7 +16,7 @@ public class CMask {
         return this.idMask++;
     }
 
-    public void addCMask (CMask m){
+    public void addCMask (MMask m){
         this.mascara.add(m);
     }
 
@@ -45,46 +45,15 @@ public class CMask {
     
     
     
-     public int getHoraMask1(int idMask){
-        int tempoUso = (getHoraMask1(idMask));
-        for(CMask listMask: mascara){
+       public int getHoraMask1(int idMask){
+        int tempoUso = 0;
+        for(MMask listMask: mascara){
             if (listMask.getIdMask()==idMask) {
-                tempoUso = listMask.getHoraMask1(tempoUso);
+                tempoUso = listMask.getHoraMask1();
                 break;
             }
         }
         return tempoUso;
     }
 
-    private int getIdMask() {
-        return 0;
-    }
-   /* public String getNomePes(int idPessoa){
-        String nome = null;
-        for(Pessoa listPes: pessoas){
-            if (listPes.getIdPessoa()==idPessoa) {
-                nome = listPes.getNomePessoa();
-                break;
-            }
-        }
-        return nome;
-
-
- public int pesqIdPes(String cpf) {
-        int idPessoa = 0;
-        for (Pessoa listPes : pessoas) {
-            if (listPes.getCpf().equals(cpf)) {
-                idPessoa = listPes.getIdPessoa();
-                break;
-            }
-        }
-        return idPessoa;
-    }
-
-
-
-*/
-//(getMaskbyid)
-
-// return getHoraMask1*/
 }

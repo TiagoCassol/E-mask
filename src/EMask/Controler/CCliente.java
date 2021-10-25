@@ -41,6 +41,7 @@ public class CCliente implements InterfaceMask<MCliente>{
         c1.setSexoCliente("Masculino");
         c1.setSenhaCliente("111111");
         c1.setSusCliente("000000000000001");
+        this.add(c1);
 
         MCliente c2 = new MCliente();
         c2.setIdCliente(this.gerarId());
@@ -54,6 +55,7 @@ public class CCliente implements InterfaceMask<MCliente>{
         c2.setSexoCliente("Masculino");
         c2.setSenhaCliente("222222");
         c2.setSusCliente("00000000000002");
+        this.add(c2);
 
         MCliente c3 = new MCliente();
         c3.setIdCliente(this.gerarId());
@@ -67,6 +69,7 @@ public class CCliente implements InterfaceMask<MCliente>{
         c3.setSexoCliente("Feminino");
         c3.setSenhaCliente("333333");
         c3.setSusCliente("000000000000003");
+        this.add(c3);
      
     }
       public boolean verNumeroSus(String susCliente) {

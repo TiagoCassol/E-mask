@@ -25,10 +25,11 @@ public class ClientePrincipal {
     
     public static void menu2(){
         System.out.println("-------------------");
-        System.out.println("|  Tela Inicial  |");
+        System.out.println("|  Escolha um Menu |");
         System.out.println("-------------------");
-        System.out.println("1 - Endereço");
-        System.out.println("2 - Configuração");
+        System.out.println("1 - Tela Principal");
+        System.out.println("2 - Endereço");
+        System.out.println("3 - Configurações");
     }
     
     public static void login() {
@@ -51,7 +52,7 @@ public class ClientePrincipal {
                     System.out.println(logar.getNomeCli(c.getIdCliente()));
                     boolean senha = false;
                     do{
-                        System.out.print("coloque a senha");
+                        System.out.print("coloque a senha: ");
                         senhaCliente = leTexto();
                         if(logar.verSenha(senhaCliente)){
                         c= logar.getByDoc(senhaCliente);
@@ -180,7 +181,7 @@ public class ClientePrincipal {
                         c= logar.getByDoc(senhaCliente);
                             System.out.println("login realizado");
                         } else {
-                           System.out.println("senha inválido");;
+                           System.out.println("senha inválida");;
                     System.out.print("Deseja tentar novamente? 1-Sim | 0-Não");
                 int i = ler.nextInt();
                 logC = i == 1;
@@ -199,6 +200,7 @@ public class ClientePrincipal {
     
     public static void main(String[] args) {
         logar.mokCliente();
+        System.out.println(logar.getAll().toString());
         int opM;
         String s = "s";
         do {

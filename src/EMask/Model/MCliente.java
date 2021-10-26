@@ -1,5 +1,7 @@
 package EMask.Model;
 
+import java.util.ArrayList;
+
 public class MCliente {
 
     private int idCliente; //PK
@@ -13,6 +15,7 @@ public class MCliente {
     private String sexoCliente;
     private String senhaCliente;
     private String susCliente;
+    
   
 
 

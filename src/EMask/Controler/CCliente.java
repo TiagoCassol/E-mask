@@ -40,7 +40,7 @@ public class CCliente implements InterfaceMask<MCliente>{
         c1.setEmailCliente("aaaaaaaaaaa@amail.com");
         c1.setSexoCliente("Masculino");
         c1.setSenhaCliente("111111");
-        c1.setSusCliente("000000000000001");
+        c1.setSusCliente("01");
         this.add(c1);
 
         MCliente c2 = new MCliente();

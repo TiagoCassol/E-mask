@@ -10,6 +10,7 @@ import java.util.ArrayList;
 /**
  *
  * @author casso
+ * @param <I>
  */
 public interface InterfaceMask<I> {
     public int gerarId();
